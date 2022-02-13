@@ -1,2 +1,1 @@
-# todo-app
-Todo-app in JS
+<h1>http://pawelwebsite.cba.pl/todo-app/</h1>
