@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 50px;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(140deg, #8052ec, #d161ff);
+    font-family: sans-serif;
+    .newtask {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #fff;
+        width: 400px;
+        border-radius: 5px;
+        padding: 30px 20px;
+        background: #fff;
+        box-shadow: 16px 18px 47px -16px #8052ec;
+        input {
+            outline: none;
+            padding: 10px 10px;
+            border-radius: 3px;
+            width: 250px;
+            border: 1px solid #8052ec;
+            font-weight: 500;
+        }
+        &_btn {
+            background-color: #8052ec;
+            border: 0;
+            border-radius: 4px;
+            padding: 10px 30px;
+            color: #fff;
+            transition: all ease-out 0.3s;
+            cursor: pointer;
+            &:hover {
+                background-color: #6842c0;
+            }
+        }
+    }
+    .task_list {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 400px;
+        border-radius: 5px;
+        padding: 30px 20px;
+        background: #fff;
+        box-shadow: 16px 18px 47px -16px #8052ec;
+        li {
+            padding: 5px 0px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgb(201, 198, 198);
+            .fa-trash-can,
+            .fa-check,
+            .fa-pen {
+                padding: 10px 10px;
+                background-color: #8052ec;
+                font-size: 0.8rem;
+                color: white;
+                border-radius: 4px;
+                transition: all ease-out 0.3s;
+                cursor: pointer;
+                &.fa-trash-can:hover {
+                    background-color: #cc1111;
+                }
+                &.fa-check:hover {
+                    background-color: #0cb963;
+                }
+                &.fa-pen:hover {
+                    background-color: #d16105;
+                }
+            }
+        }
+    }
+    .task_done {
+        text-decoration: line-through;
+    }
+    .icon_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+}
